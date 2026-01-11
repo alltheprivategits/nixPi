@@ -79,7 +79,7 @@
             "192.168.1.2   pi-hole"
             "192.168.1.3  nas"
           ];
-          upstreams = ["1.1.1.1" "1.1.1.2"];
+          upstreams = ["127.0.0.1#5353"];
           };
           # Let's not use Pi-hole time service. My home router provides clock.
           ntp = {
