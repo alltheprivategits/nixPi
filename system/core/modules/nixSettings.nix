@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 {
   # Allow unfree packages (try to keep it gpl)
-  nixpkgs.config.allowUnfree = flase;
+  nixpkgs.config.allowUnfree = false;
   # inital system state
   system.stateVersion = "25.11";
   nix = {

@@ -5,6 +5,9 @@
     git.settings.user = {
       Name = "alltheprivategits";
       Email = "allthegits@proton.me";
+      safe = {
+	directoriy = "/etc/nixos";
+      };
       # Name = "spencer alleen";
       # userName  = "SaggingLeftNut";
       # userEmail = "mrspencerallen@gmail.com";
