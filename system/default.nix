@@ -6,14 +6,16 @@
       ./users/default.nix
       ./utils/default.nix
       ./commandLineApps/default.nix
+      ./services/default.nix
       # ./gui/default.nix
       # ./desktopApps/default.nix
       # ./specialisations/mobile.nix
     ];
-  # config = {
+  config = {
     systemUtils.enable = lib.mkDefault true;
     commandLineApps.enable = lib.mkDefault true;
+    services.enable = lib.mkDefault true;
   #   gui.enable = lib.mkDefault true;
   #   desktopApps.enable = config.gui.enable;
-  # };
+  };
 }
