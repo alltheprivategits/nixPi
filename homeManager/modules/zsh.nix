@@ -8,8 +8,6 @@
       G = "git";
       reboot = "sudo reboot";
       poweroff = "sudo poweroff";
-      e = "emacsclient --create-frame --alternate-editor=''";
-      E = "emacsclient --create-frame --alternate-editor=''";
       switch = "nh os switch";
       search = "nh search";
       boot = "nh os boot";
@@ -36,7 +34,6 @@
     key[Control-Right]="''${terminfo[kRIT5]}"
     [[ -n "''${key[Control-Left]}"  ]] && bindkey -- "''${key[Control-Left]}"  backward-word
     [[ -n "''${key[Control-Right]}" ]] && bindkey -- "''${key[Control-Right]}" forward-word
-    fastfetch
     '';
     enableCompletion = true;
     # loginExtra = "/nix/store/$(ls -la /nix/store | grep polkit-kde-agent | grep '^d' | awk '{print $9}')/libexec/polkit-kde-authentication-agent-1";
