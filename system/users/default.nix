@@ -1,0 +1,6 @@
+{ ... }:
+{
+  imports = [
+    ./users/evilclown.nix
+  ];
+}
